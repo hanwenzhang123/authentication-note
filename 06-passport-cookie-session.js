@@ -3,8 +3,12 @@ Using Passport.js to Add Cookies and Sessions
 $ npm i passport passport-local passport-local-mongoose express-session
 
 //https://www.npmjs.com/package/express-session
+
 //https://www.passportjs.org/docs/
 //https://www.npmjs.com/package/passport-local-mongoose
+
+//https://github.com/jaredhanson/passport-local
+//https://github.com/saintedlama/passport-local-mongoose
 
 
 //jshint esversion:6
