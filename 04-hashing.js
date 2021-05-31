@@ -1,3 +1,9 @@
+Hashing functions are functions that map input data of some arbitrary size to fixed-size output values.
+1. One-way function which is infeasible to invert
+2. Small change in input yields large change in the output 3. Deterministic - same input yields same output
+4. Unlikely to find 2 outputs with same value
+5.Password Hash Functions are deliberately SLOW
+
 //https://www.npmjs.com/package/md5
 //npm install md5
 
