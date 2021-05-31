@@ -23,6 +23,10 @@ app.get('/', (req, res) => {
     res.send('THIS IS THE HOME PAGE')
 })
 
+app.get('/register', (req, res) => {
+    res.render('register')
+})
+
 app.post('/register', async(req, res) => {
     const { password, username } = req.body;
     const hash = await bcrypt.hash(password, 12);
@@ -32,10 +36,6 @@ app.post('/register', async(req, res) => {
     })
     await user.save();  //save to our database in mongodb
     res.redirect('/') //redirect back to home after signup
-})
-
-app.get('/register', (req, res) => {
-    res.render('register')
 })
 
 app.get('/secret', (req, res) => {
@@ -65,4 +65,4 @@ const userSchema = new mongoose.Schema({
 
 module.exports = mongoose.model('User', userSchema);
 
-  
+   
