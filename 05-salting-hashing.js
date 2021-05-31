@@ -1,3 +1,6 @@
+A salt is a random value added to the password before we hash it.
+It helps ensure unique hashes and mitigate common attacks
+
 https://www.npmjs.com/package/bcrypt
 npm i bcrypt
 
