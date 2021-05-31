@@ -81,3 +81,24 @@ app.listen(3000, () => {
     console.log("SERVING YOUR APP ON 3000!")
 })
   
+
+
+
+//models/user.js - database schema
+
+const mongoose = require('mongoose');
+
+const userSchema = new mongoose.Schema({
+    username: {
+        type: String,
+        required: [true, 'Username cannot be blank']
+    },
+    password: {
+        type: String,
+        required: [true, 'Password cannot be blank']
+    }
+})
+
+module.exports = mongoose.model('User', userSchema);
+
+  
